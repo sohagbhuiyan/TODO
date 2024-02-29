@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="to-do.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="To-Do-Logo 1.png" class="nav-logo" />
+      </div>
+
+      <div class="button">
+        <div class="btn-box">
+          <button class="tab-btn" id="personal">Personal</button>
+          <button class="tab-btn" id="professional">Professional</button>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="search">
+          <input type="text" id="input" placeholder="What do you need to do?" />
+          <button class="add" type="button" onclick="add()">Add</button>
+        </div>
+
+        <div class="search hide">
+          <input
+            type="text"
+            id="input2"
+            placeholder="What do you need to do?"
+          />
+          <button class="add" type="button" onclick="add2()">Add</button>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="item">
+          <form>
+            <ul id="list-container"></ul>
+          </form>
+        </div>
+
+        <div class="item hide">
+          <form>
+            <ul id="list-container2"></ul>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="to-do.js"></script>
+  </body>
+</html>
